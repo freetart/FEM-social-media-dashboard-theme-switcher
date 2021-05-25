@@ -177,6 +177,18 @@
 
 // theme toggle
 .theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+
+  &__desc {
+    @include textStyles;
+    color: var(--text-primary);
+    font-size: size(xxs);
+    margin-right: 2rem;
+  }
+
   &__checkbox {
     opacity: 0;
     position: absolute;

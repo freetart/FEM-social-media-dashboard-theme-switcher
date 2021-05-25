@@ -1,0 +1,60 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+// theme toggle
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+
+  &__desc {
+    @include textStyles;
+    color: var(--text-primary);
+    font-size: size(xxs);
+    margin-right: 2rem;
+  }
+
+  &__checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+
+  &__label {
+    width: 5rem;
+    height: 2.6rem;
+    background-color: var(--CardBG);
+    transition: $mainTransition;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    position: relative;
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  &__ball {
+    width: 22px;
+    height: 22px;
+    background-color: var(--text-primary);
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    border-radius: 50%;
+    transition: $mainTransition;
+  }
+
+  &__checkbox:checked + &__label &__ball {
+    transform: translateX(2.4rem);
+  }
+
+  .fa-moon {
+    color: #f1c40f;
+  }
+
+  .fa-sun {
+    color: #f39c13;
+  }
+}

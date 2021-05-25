@@ -1,0 +1,112 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+// primary card
+.primary-card {
+  text-align: center;
+  padding: 3rem;
+  transition: $mainTransition;
+  border-radius: $radius;
+  box-shadow: $cardShadow;
+  background-color: var(--CardBG);
+  position: relative;
+
+  &--facebook::before {
+    content: "";
+    background: color(facebook);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5rem;
+    width: 100%;
+  }
+  &--twitter::before {
+    content: "";
+    background: color(twitter);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5rem;
+    width: 100%;
+  }
+  &--instagram::before {
+    content: "";
+    background: linear-gradient(
+      to right,
+      rgb(253, 196, 104),
+      rgb(223, 73, 150)
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5rem;
+    width: 100%;
+  }
+  &--youtube::before {
+    content: "";
+    background: color(youtube);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5rem;
+    width: 100%;
+  }
+
+  &__title {
+    @include flexCenter;
+  }
+
+  &__logo {
+    width: 2rem;
+  }
+
+  &__username {
+    @include textStyles;
+    font-size: size(xxs);
+    padding: 0 0.5rem;
+    color: var(--text-primary);
+    transition: $mainTransition;
+  }
+
+  &__body {
+    padding: 2.5rem 0;
+  }
+
+  &__number {
+    @include headingStyles;
+    font-size: size(xxl) + 3rem;
+    color: var(--text-primary);
+    transition: $mainTransition;
+  }
+
+  &__followers {
+    @include textStyles;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: size(xs);
+    color: var(--text-secondary);
+    transition: $mainTransition;
+  }
+
+  &__footer {
+    @include flexCenter;
+  }
+
+  &__icon {
+    width: 2rem;
+  }
+
+  &__daily-stat {
+    @include textStyles;
+    font-size: size(xxs);
+    padding: 0 0.5rem;
+  }
+
+  &__daily-stat--positive {
+    color: color(limeGreen);
+  }
+
+  &__daily-stat--negative {
+    color: color(brightRed);
+  }
+}

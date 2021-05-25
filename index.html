@@ -11,6 +11,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="./images/favicon/koala.ico" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Frontend Mentor Social Media Dashboard with Theme Switcher</title>
@@ -50,7 +52,7 @@
         </div>
       </header>
       <div class="dashboard-content">
-        <div class="dashboard-primary-cards">
+        <div class="dashboard-primary-cards" data-aos="fade-up">
           <div class="dashboard-primary-cards-content">
             <!-- single primary card -->
             <a href="#!" class="primary-card-link">
@@ -182,7 +184,11 @@
             </a>
           </div>
         </div>
-        <div class="dashboard-overview-cards">
+        <div
+          class="dashboard-overview-cards"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <h2 class="dashboard-overview-cards__title">Overview - Today</h2>
           <div class="dashboard-overview-cards-content">
             <!-- single overview card -->
@@ -455,6 +461,12 @@
         class="footer__logo"
       />
     </footer>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 100, duration: 1000, once: true });
+    </script>
+    <!-- js -->
     <script src="./js/main.js"></script>
   </body>
 </html>

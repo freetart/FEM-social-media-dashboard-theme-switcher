@@ -15,16 +15,17 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Frontend Mentor Social Media Dashboard with Theme Switcher</title>
   </head>
-  <body>
+  <body class="dark">
     <!-- dashboard section -->
     <section class="dashboard">
-      <div class="dashboard-content">
-        <header class="dashboard-header">
+      <header class="dashboard-header">
+        <div class="dashboard-header-content">
           <div class="dashboard-header__headings">
             <h1 class="dashboard-header__title">Social Media Dashboard</h1>
             <p class="dashboard-header__lead">Total Followers: 23,004</p>
           </div>
           <div class="theme-toggle">
+            <p class="theme-toggle__title">Dark Mode</p>
             <input
               type="checkbox"
               class="theme-toggle__checkbox"
@@ -36,374 +37,385 @@
               <div class="theme-toggle__ball"></div>
             </label>
           </div>
-        </header>
+        </div>
+      </header>
+      <div class="dashboard-content">
         <div class="dashboard-primary-cards">
-          <!-- single primary card -->
-          <a href="#!" class="primary-card-link">
-            <article class="primary-card">
-              <div class="primary-card__title">
-                <img
-                  src="./images/icon-facebook.svg"
-                  alt="facebook logo"
-                  class="primary-card__logo"
-                />
-                <p class="primary-card__username">@nathanf</p>
-              </div>
-              <div class="primary-card__body">
-                <h3 class="primary-card__number">1987</h3>
-                <p class="primary-card__followers">Followers</p>
-              </div>
-              <div class="primary-card__footer">
-                <img
-                  src="./images/icon-up.svg"
-                  alt="icon up"
-                  class="primary-card__icon"
-                />
-                <p
-                  class="
-                    primary-card__daily-stat primary-card__daily-stat--positive
-                  "
-                >
-                  12 Today
-                </p>
-              </div>
-            </article>
-          </a>
-          <!-- single primary card -->
-          <a href="#!" class="primary-card-link">
-            <article class="primary-card">
-              <div class="primary-card__title">
-                <img
-                  src="./images/icon-twitter.svg"
-                  alt="twitter logo"
-                  class="primary-card__logo"
-                />
-                <p class="primary-card__username">@nathanf</p>
-              </div>
-              <div class="primary-card__body">
-                <h3 class="primary-card__number">1044</h3>
-                <p class="primary-card__followers">Followers</p>
-              </div>
-              <div class="primary-card__footer">
-                <img
-                  src="./images/icon-up.svg"
-                  alt="icon up"
-                  class="primary-card__icon"
-                />
-                <p
-                  class="
-                    primary-card__daily-stat primary-card__daily-stat--positive
-                  "
-                >
-                  99 Today
-                </p>
-              </div>
-            </article>
-          </a>
-          <!-- single primary card -->
-          <a href="#!" class="primary-card-link">
-            <article class="primary-card">
-              <div class="primary-card__title">
-                <img
-                  src="./images/icon-instagram.svg"
-                  alt="instagram logo"
-                  class="primary-card__logo"
-                />
-                <p class="primary-card__username">@nathanf</p>
-              </div>
-              <div class="primary-card__body">
-                <h3 class="primary-card__number">11k</h3>
-                <p class="primary-card__followers">Followers</p>
-              </div>
-              <div class="primary-card__footer">
-                <img
-                  src="./images/icon-up.svg"
-                  alt="icon up"
-                  class="primary-card__icon"
-                />
-                <p
-                  class="
-                    primary-card__daily-stat primary-card__daily-stat--positive
-                  "
-                >
-                  1099 Today
-                </p>
-              </div>
-            </article>
-          </a>
-          <!-- single primary card -->
-          <a href="#!" class="primary-card-link">
-            <article class="primary-card">
-              <div class="primary-card__title">
-                <img
-                  src="./images/icon-youtube.svg"
-                  alt="instagram logo"
-                  class="primary-card__logo"
-                />
-                <p class="primary-card__username">@nathanf</p>
-              </div>
-              <div class="primary-card__body">
-                <h3 class="primary-card__number">8239</h3>
-                <p class="primary-card__followers">Subscribers</p>
-              </div>
-              <div class="primary-card__footer">
-                <img
-                  src="./images/icon-down.svg"
-                  alt="icon down"
-                  class="primary-card__icon"
-                />
-                <p
-                  class="
-                    primary-card__daily-stat primary-card__daily-stat--negative
-                  "
-                >
-                  1099 Today
-                </p>
-              </div>
-            </article>
-          </a>
+          <div class="dashboard-primary-cards-content">
+            <!-- single primary card -->
+            <a href="#!" class="primary-card-link">
+              <article class="primary-card primary-card--facebook">
+                <div class="primary-card__title">
+                  <img
+                    src="./images/icon-facebook.svg"
+                    alt="facebook logo"
+                    class="primary-card__logo"
+                  />
+                  <p class="primary-card__username">@nathanf</p>
+                </div>
+                <div class="primary-card__body">
+                  <h3 class="primary-card__number">1987</h3>
+                  <p class="primary-card__followers">Followers</p>
+                </div>
+                <div class="primary-card__footer">
+                  <img
+                    src="./images/icon-up.svg"
+                    alt="icon up"
+                    class="primary-card__icon"
+                  />
+                  <p
+                    class="
+                      primary-card__daily-stat
+                      primary-card__daily-stat--positive
+                    "
+                  >
+                    12 Today
+                  </p>
+                </div>
+              </article>
+            </a>
+            <!-- single primary card -->
+            <a href="#!" class="primary-card-link">
+              <article class="primary-card primary-card--twitter">
+                <div class="primary-card__title">
+                  <img
+                    src="./images/icon-twitter.svg"
+                    alt="twitter logo"
+                    class="primary-card__logo"
+                  />
+                  <p class="primary-card__username">@nathanf</p>
+                </div>
+                <div class="primary-card__body">
+                  <h3 class="primary-card__number">1044</h3>
+                  <p class="primary-card__followers">Followers</p>
+                </div>
+                <div class="primary-card__footer">
+                  <img
+                    src="./images/icon-up.svg"
+                    alt="icon up"
+                    class="primary-card__icon"
+                  />
+                  <p
+                    class="
+                      primary-card__daily-stat
+                      primary-card__daily-stat--positive
+                    "
+                  >
+                    99 Today
+                  </p>
+                </div>
+              </article>
+            </a>
+            <!-- single primary card -->
+            <a href="#!" class="primary-card-link">
+              <article class="primary-card primary-card--instagram">
+                <div class="primary-card__title">
+                  <img
+                    src="./images/icon-instagram.svg"
+                    alt="instagram logo"
+                    class="primary-card__logo"
+                  />
+                  <p class="primary-card__username">@nathanf</p>
+                </div>
+                <div class="primary-card__body">
+                  <h3 class="primary-card__number">11k</h3>
+                  <p class="primary-card__followers">Followers</p>
+                </div>
+                <div class="primary-card__footer">
+                  <img
+                    src="./images/icon-up.svg"
+                    alt="icon up"
+                    class="primary-card__icon"
+                  />
+                  <p
+                    class="
+                      primary-card__daily-stat
+                      primary-card__daily-stat--positive
+                    "
+                  >
+                    1099 Today
+                  </p>
+                </div>
+              </article>
+            </a>
+            <!-- single primary card -->
+            <a href="#!" class="primary-card-link">
+              <article class="primary-card primary-card--youtube">
+                <div class="primary-card__title">
+                  <img
+                    src="./images/icon-youtube.svg"
+                    alt="instagram logo"
+                    class="primary-card__logo"
+                  />
+                  <p class="primary-card__username">@nathanf</p>
+                </div>
+                <div class="primary-card__body">
+                  <h3 class="primary-card__number">8239</h3>
+                  <p class="primary-card__followers">Subscribers</p>
+                </div>
+                <div class="primary-card__footer">
+                  <img
+                    src="./images/icon-down.svg"
+                    alt="icon down"
+                    class="primary-card__icon"
+                  />
+                  <p
+                    class="
+                      primary-card__daily-stat
+                      primary-card__daily-stat--negative
+                    "
+                  >
+                    144 Today
+                  </p>
+                </div>
+              </article>
+            </a>
+          </div>
         </div>
         <div class="dashboard-overview-cards">
-          <!-- single overview card -->
-          <a href="#!" class="overview-card-link">
-            <article class="overview-card">
-              <div class="overview-card__header">
-                <h5 class="overview-card__stat-type">Page Views</h5>
-                <img
-                  src="./images/icon-facebook.svg"
-                  alt="facebook logo"
-                  class="overview-card__logo"
-                />
-              </div>
-              <div class="overview-card__body">
-                <h4 class="overview-card__number">87</h4>
-                <div class="overview-card__daily-stats">
+          <h2 class="dashboard-overview-cards__title">Overview - Today</h2>
+          <div class="dashboard-overview-cards-content">
+            <!-- single overview card -->
+            <a href="#!" class="overview-card-link">
+              <article class="overview-card">
+                <div class="overview-card__header">
+                  <h5 class="overview-card__stat-type">Page Views</h5>
                   <img
-                    src="./images/icon-up.svg"
-                    alt="icon up"
-                    class="overview-card__icon"
+                    src="./images/icon-facebook.svg"
+                    alt="facebook logo"
+                    class="overview-card__logo"
                   />
-                  <small
-                    class="
-                      overview-card__daily-stat
-                      overview-card__daily-stat--positive
-                    "
-                    >3%</small
-                  >
                 </div>
-              </div>
-            </article>
-          </a>
-          <!-- single overview card -->
-          <a href="#!" class="overview-card-link">
-            <article class="overview-card">
-              <div class="overview-card__header">
-                <h5 class="overview-card__stat-type">Likes</h5>
-                <img
-                  src="./images/icon-facebook.svg"
-                  alt="facebook logo"
-                  class="overview-card__logo"
-                />
-              </div>
-              <div class="overview-card__body">
-                <h4 class="overview-card__number">52</h4>
-                <div class="overview-card__daily-stats">
+                <div class="overview-card__body">
+                  <h4 class="overview-card__number">87</h4>
+                  <div class="overview-card__daily-stats">
+                    <img
+                      src="./images/icon-up.svg"
+                      alt="icon up"
+                      class="overview-card__icon"
+                    />
+                    <small
+                      class="
+                        overview-card__daily-stat
+                        overview-card__daily-stat--positive
+                      "
+                      >3%</small
+                    >
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- single overview card -->
+            <a href="#!" class="overview-card-link">
+              <article class="overview-card">
+                <div class="overview-card__header">
+                  <h5 class="overview-card__stat-type">Likes</h5>
                   <img
-                    src="./images/icon-down.svg"
-                    alt="icon down"
-                    class="overview-card__icon"
+                    src="./images/icon-facebook.svg"
+                    alt="facebook logo"
+                    class="overview-card__logo"
                   />
-                  <small
-                    class="
-                      overview-card__daily-stat
-                      overview-card__daily-stat--negative
-                    "
-                    >2%</small
-                  >
                 </div>
-              </div>
-            </article>
-          </a>
-          <!-- single overview card -->
-          <a href="#!" class="overview-card-link">
-            <article class="overview-card">
-              <div class="overview-card__header">
-                <h5 class="overview-card__stat-type">Likes</h5>
-                <img
-                  src="./images/icon-instagram.svg"
-                  alt="instagram logo"
-                  class="overview-card__logo"
-                />
-              </div>
-              <div class="overview-card__body">
-                <h4 class="overview-card__number">5462</h4>
-                <div class="overview-card__daily-stats">
+                <div class="overview-card__body">
+                  <h4 class="overview-card__number">52</h4>
+                  <div class="overview-card__daily-stats">
+                    <img
+                      src="./images/icon-down.svg"
+                      alt="icon down"
+                      class="overview-card__icon"
+                    />
+                    <small
+                      class="
+                        overview-card__daily-stat
+                        overview-card__daily-stat--negative
+                      "
+                      >2%</small
+                    >
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- single overview card -->
+            <a href="#!" class="overview-card-link">
+              <article class="overview-card">
+                <div class="overview-card__header">
+                  <h5 class="overview-card__stat-type">Likes</h5>
                   <img
-                    src="./images/icon-up.svg"
-                    alt="icon up"
-                    class="overview-card__icon"
+                    src="./images/icon-instagram.svg"
+                    alt="instagram logo"
+                    class="overview-card__logo"
                   />
-                  <small
-                    class="
-                      overview-card__daily-stat
-                      overview-card__daily-stat--positive
-                    "
-                    >2257%</small
-                  >
                 </div>
-              </div>
-            </article>
-          </a>
-          <!-- single overview card -->
-          <a href="#!" class="overview-card-link">
-            <article class="overview-card">
-              <div class="overview-card__header">
-                <h5 class="overview-card__stat-type">Profile Views</h5>
-                <img
-                  src="./images/icon-instagram.svg"
-                  alt="instagram logo"
-                  class="overview-card__logo"
-                />
-              </div>
-              <div class="overview-card__body">
-                <h4 class="overview-card__number">52k</h4>
-                <div class="overview-card__daily-stats">
+                <div class="overview-card__body">
+                  <h4 class="overview-card__number">5462</h4>
+                  <div class="overview-card__daily-stats">
+                    <img
+                      src="./images/icon-up.svg"
+                      alt="icon up"
+                      class="overview-card__icon"
+                    />
+                    <small
+                      class="
+                        overview-card__daily-stat
+                        overview-card__daily-stat--positive
+                      "
+                      >2257%</small
+                    >
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- single overview card -->
+            <a href="#!" class="overview-card-link">
+              <article class="overview-card">
+                <div class="overview-card__header">
+                  <h5 class="overview-card__stat-type">Profile Views</h5>
                   <img
-                    src="./images/icon-up.svg"
-                    alt="icon up"
-                    class="overview-card__icon"
+                    src="./images/icon-instagram.svg"
+                    alt="instagram logo"
+                    class="overview-card__logo"
                   />
-                  <small
-                    class="
-                      overview-card__daily-stat
-                      overview-card__daily-stat--positive
-                    "
-                    >1375%</small
-                  >
                 </div>
-              </div>
-            </article>
-          </a>
-          <!-- single overview card -->
-          <a href="#!" class="overview-card-link">
-            <article class="overview-card">
-              <div class="overview-card__header">
-                <h5 class="overview-card__stat-type">Retweets</h5>
-                <img
-                  src="./images/icon-twitter.svg"
-                  alt="twitter logo"
-                  class="overview-card__logo"
-                />
-              </div>
-              <div class="overview-card__body">
-                <h4 class="overview-card__number">117</h4>
-                <div class="overview-card__daily-stats">
+                <div class="overview-card__body">
+                  <h4 class="overview-card__number">52k</h4>
+                  <div class="overview-card__daily-stats">
+                    <img
+                      src="./images/icon-up.svg"
+                      alt="icon up"
+                      class="overview-card__icon"
+                    />
+                    <small
+                      class="
+                        overview-card__daily-stat
+                        overview-card__daily-stat--positive
+                      "
+                      >1375%</small
+                    >
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- single overview card -->
+            <a href="#!" class="overview-card-link">
+              <article class="overview-card">
+                <div class="overview-card__header">
+                  <h5 class="overview-card__stat-type">Retweets</h5>
                   <img
-                    src="./images/icon-up.svg"
-                    alt="icon up"
-                    class="overview-card__icon"
+                    src="./images/icon-twitter.svg"
+                    alt="twitter logo"
+                    class="overview-card__logo"
                   />
-                  <small
-                    class="
-                      overview-card__daily-stat
-                      overview-card__daily-stat--positive
-                    "
-                    >303%</small
-                  >
                 </div>
-              </div>
-            </article>
-          </a>
-          <!-- single overview card -->
-          <a href="#!" class="overview-card-link">
-            <article class="overview-card">
-              <div class="overview-card__header">
-                <h5 class="overview-card__stat-type">Likes</h5>
-                <img
-                  src="./images/icon-twitter.svg"
-                  alt="twitter logo"
-                  class="overview-card__logo"
-                />
-              </div>
-              <div class="overview-card__body">
-                <h4 class="overview-card__number">507</h4>
-                <div class="overview-card__daily-stats">
+                <div class="overview-card__body">
+                  <h4 class="overview-card__number">117</h4>
+                  <div class="overview-card__daily-stats">
+                    <img
+                      src="./images/icon-up.svg"
+                      alt="icon up"
+                      class="overview-card__icon"
+                    />
+                    <small
+                      class="
+                        overview-card__daily-stat
+                        overview-card__daily-stat--positive
+                      "
+                      >303%</small
+                    >
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- single overview card -->
+            <a href="#!" class="overview-card-link">
+              <article class="overview-card">
+                <div class="overview-card__header">
+                  <h5 class="overview-card__stat-type">Likes</h5>
                   <img
-                    src="./images/icon-up.svg"
-                    alt="icon up"
-                    class="overview-card__icon"
+                    src="./images/icon-twitter.svg"
+                    alt="twitter logo"
+                    class="overview-card__logo"
                   />
-                  <small
-                    class="
-                      overview-card__daily-stat
-                      overview-card__daily-stat--positive
-                    "
-                    >553%</small
-                  >
                 </div>
-              </div>
-            </article>
-          </a>
-          <!-- single overview card -->
-          <a href="#!" class="overview-card-link">
-            <article class="overview-card">
-              <div class="overview-card__header">
-                <h5 class="overview-card__stat-type">Likes</h5>
-                <img
-                  src="./images/icon-youtube.svg"
-                  alt="youtube logo"
-                  class="overview-card__logo"
-                />
-              </div>
-              <div class="overview-card__body">
-                <h4 class="overview-card__number">107</h4>
-                <div class="overview-card__daily-stats">
+                <div class="overview-card__body">
+                  <h4 class="overview-card__number">507</h4>
+                  <div class="overview-card__daily-stats">
+                    <img
+                      src="./images/icon-up.svg"
+                      alt="icon up"
+                      class="overview-card__icon"
+                    />
+                    <small
+                      class="
+                        overview-card__daily-stat
+                        overview-card__daily-stat--positive
+                      "
+                      >553%</small
+                    >
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- single overview card -->
+            <a href="#!" class="overview-card-link">
+              <article class="overview-card">
+                <div class="overview-card__header">
+                  <h5 class="overview-card__stat-type">Likes</h5>
                   <img
-                    src="./images/icon-down.svg"
-                    alt="icon down"
-                    class="overview-card__icon"
+                    src="./images/icon-youtube.svg"
+                    alt="youtube logo"
+                    class="overview-card__logo"
                   />
-                  <small
-                    class="
-                      overview-card__daily-stat
-                      overview-card__daily-stat--negative
-                    "
-                    >19%</small
-                  >
                 </div>
-              </div>
-            </article>
-          </a>
-          <!-- single overview card -->
-          <a href="#!" class="overview-card-link">
-            <article class="overview-card">
-              <div class="overview-card__header">
-                <h5 class="overview-card__stat-type">Total Views</h5>
-                <img
-                  src="./images/icon-youtube.svg"
-                  alt="youtube logo"
-                  class="overview-card__logo"
-                />
-              </div>
-              <div class="overview-card__body">
-                <h4 class="overview-card__number">1407</h4>
-                <div class="overview-card__daily-stats">
+                <div class="overview-card__body">
+                  <h4 class="overview-card__number">107</h4>
+                  <div class="overview-card__daily-stats">
+                    <img
+                      src="./images/icon-down.svg"
+                      alt="icon down"
+                      class="overview-card__icon"
+                    />
+                    <small
+                      class="
+                        overview-card__daily-stat
+                        overview-card__daily-stat--negative
+                      "
+                      >19%</small
+                    >
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- single overview card -->
+            <a href="#!" class="overview-card-link">
+              <article class="overview-card">
+                <div class="overview-card__header">
+                  <h5 class="overview-card__stat-type">Total Views</h5>
                   <img
-                    src="./images/icon-down.svg"
-                    alt="icon down"
-                    class="overview-card__icon"
+                    src="./images/icon-youtube.svg"
+                    alt="youtube logo"
+                    class="overview-card__logo"
                   />
-                  <small
-                    class="
-                      overview-card__daily-stat
-                      overview-card__daily-stat--negative
-                    "
-                    >12%</small
-                  >
                 </div>
-              </div>
-            </article>
-          </a>
+                <div class="overview-card__body">
+                  <h4 class="overview-card__number">1407</h4>
+                  <div class="overview-card__daily-stats">
+                    <img
+                      src="./images/icon-down.svg"
+                      alt="icon down"
+                      class="overview-card__icon"
+                    />
+                    <small
+                      class="
+                        overview-card__daily-stat
+                        overview-card__daily-stat--negative
+                      "
+                      >12%</small
+                    >
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
         </div>
       </div>
     </section>

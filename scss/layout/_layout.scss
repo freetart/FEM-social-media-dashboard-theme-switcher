@@ -1,2 +1,60 @@
 // imports
 @use "../abstracts/abstracts" as *;
+
+// dashboard
+.dashboard {
+  &-header {
+    background-color: var(--BGTop);
+    height: 30vh;
+
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include maxWidthLg;
+      @include sectionSpacing;
+    }
+
+    &__title {
+      @include headingStyles;
+      font-size: size(xxl);
+      color: var(--text-primary);
+    }
+
+    &__lead {
+      @include textStyles;
+      font-size: size(xs);
+      color: var(--text-secondary);
+    }
+  }
+
+  &-content {
+    @include maxWidthLg;
+    transform: translateY(-15rem);
+    padding: 0 2rem;
+  }
+
+  &-primary-cards {
+    &-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      padding: 5rem 0;
+    }
+  }
+
+  &-overview-cards {
+    &__title {
+      @include headingStyles;
+      font-size: size(xl);
+      color: var(--text-primary);
+      padding-bottom: 2rem;
+    }
+
+    &-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+  }
+}

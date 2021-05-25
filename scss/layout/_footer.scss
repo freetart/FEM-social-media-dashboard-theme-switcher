@@ -1,0 +1,32 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+// footer
+.footer {
+  @include flexCenter;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: var(--BGTop);
+
+  &__heading {
+    @include textStyles;
+    font-size: size(xxs);
+    color: var(--text-primary);
+  }
+
+  &__link {
+    @include headingStyles;
+    color: var(--text-secondary);
+    outline: 0;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &__logo {
+    width: 5rem;
+  }
+}

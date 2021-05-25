@@ -1,0 +1,67 @@
+// colors
+$colors: (
+  // shades
+  black: hsl(0, 0%, 0%),
+  white: hsl(0, 0%, 100%),
+  // primary
+  limeGreen: hsl(163, 72%, 41%),
+  brightRed: hsl(356, 69%, 56%),
+  // social media
+  facebook: hsl(208, 92%, 53%),
+  twitter: hsl(203, 89%, 53%),
+  instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%),
+  youtube: hsl(348, 97%, 39%),
+  // dark theme
+  darkThemeToggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%),
+  darkThemeBG: hsl(230, 17%, 14%),
+  darkThemeBGTop: hsl(232, 19%, 15%),
+  darkThemeCardBG: hsl(228, 28%, 20%),
+  darkThemeBlueText: hsl(228, 34%, 66%),
+  darkThemeWhiteText: hsl(0, 0%, 100%),
+  // light theme
+  lightThemeToggle: hsl(230, 22%, 74%),
+  lightThemeBG: hsl(0, 0%, 100%),
+  lightThemeBGTop: hsl(225, 100%, 98%),
+  lightThemeCardBG: hsl(227, 47%, 96%),
+  lightThemeLightBlueText: hsl(228, 12%, 44%),
+  lightThemeDarkBlueText: hsl(230, 17%, 14%)
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+// sets default custom properties
+:root {
+  --toggle: #{color(lightThemeToggle)};
+  --BG: #{color(lightTheme)};
+  --BGTop: #{color(lightThemeBGTop)};
+  --CardBG: #{color(lightThemeCardBG)};
+  --text-primary: #{color(lightThemeDarkBlueText)};
+  --text-secondary: #{color(lightThemeLightBlueText)};
+}
+
+// changes custom properties on dark mode
+body.dark {
+  --toggle: #{color(darkThemeToggle)};
+  --BG: #{color(darkThemeBG)};
+  --BGTop: #{color(darkThemeBGTop)};
+  --CardBG: #{color(darkThemeCardBG)};
+  --text-primary: #{color(darkThemeBlueText)};
+  --text-secondary: #{color(darkThemeWhiteText)};
+}
+
+// font sizes
+$font-sizes: (
+  xxl: 3.5rem,
+  xl: 3rem,
+  lg: 2.5rem,
+  md: 2rem,
+  sm: 1.8rem,
+  xs: 1.6rem,
+  xxs: 1.3rem,
+);
+
+@function size($size) {
+  @return map-get($font-sizes, $size);
+}

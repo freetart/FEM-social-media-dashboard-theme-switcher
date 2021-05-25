@@ -13,12 +13,12 @@
     }
 
     &-content {
+      @include maxWidthLg;
+      @include sectionSpacing;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      @include maxWidthLg;
-      @include sectionSpacing;
     }
 
     &__title {

@@ -9,6 +9,11 @@
   border-radius: $radius;
   transition: $mainTransition;
 
+  &:hover,
+  &:focus {
+    background-color: var(--BGTop);
+  }
+
   &__header {
     display: flex;
     align-items: center;

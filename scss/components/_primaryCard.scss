@@ -11,6 +11,11 @@
   background-color: var(--CardBG);
   position: relative;
 
+  &:hover,
+  &:focus {
+    background-color: var(--BGTop);
+  }
+
   &--facebook::before {
     content: "";
     background: color(facebook);

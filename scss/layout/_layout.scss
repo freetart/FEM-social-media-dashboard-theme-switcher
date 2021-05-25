@@ -5,6 +5,7 @@
 .dashboard {
   &-header {
     background-color: var(--BGTop);
+    transition: $mainTransition;
     height: 30vh;
 
     &-content {
@@ -19,12 +20,14 @@
       @include headingStyles;
       font-size: size(xxl);
       color: var(--text-primary);
+      transition: $mainTransition;
     }
 
     &__lead {
       @include textStyles;
       font-size: size(xs);
       color: var(--text-secondary);
+      transition: $mainTransition;
     }
   }
 
@@ -48,6 +51,7 @@
       @include headingStyles;
       font-size: size(xl);
       color: var(--text-primary);
+      transition: $mainTransition;
       padding-bottom: 2rem;
     }
 

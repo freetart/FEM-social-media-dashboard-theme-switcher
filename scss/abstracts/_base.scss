@@ -22,6 +22,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--BG);
+  transition: $mainTransition;
 }
 
 a {
